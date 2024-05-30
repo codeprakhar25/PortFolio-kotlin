@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.portfolio.databinding.FragmentDashboardBinding
@@ -28,10 +27,34 @@ class DashboardFragment : Fragment() {
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        binding.addButton.setOnClickListener {
+            val input1 = binding.calcInput1.text.toString().toInt()
+            val input2 = binding.calcInput2.text.toString().toInt()
+            binding.resultText.text=(input1+input2).toString()
         }
+
+        binding.subtractButton.setOnClickListener {
+            val input1 = binding.calcInput1.text.toString().toInt()
+            val input2 = binding.calcInput2.text.toString().toInt()
+            binding.resultText.text=(input1-input2).toString()
+        }
+
+        binding.multiplyButton.setOnClickListener {
+            val input1 = binding.calcInput1.text.toString().toInt()
+            val input2 = binding.calcInput2.text.toString().toInt()
+            binding.resultText.text=(input1*input2).toString()
+        }
+
+        binding.divideButton.setOnClickListener {
+            val input1 = binding.calcInput1.text.toString().toInt()
+            val input2 = binding.calcInput2.text.toString().toInt()
+            binding.resultText.text=(input1/input2).toString()
+        }
+
+//        val textView: TextView = binding.textDashboard
+//        dashboardViewModel.text.observe(viewLifecycleOwner) {
+//            textView.text = it
+//        }
         return root
     }
 
