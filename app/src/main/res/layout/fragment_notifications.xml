@@ -28,6 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="50dp"
         >
 
         <Button
@@ -35,13 +36,33 @@
             android:text="AC" />
         <Button
             style="@style/buttoncalc"
+            android:text="" />
+        <Button
+            style="@style/buttoncalc"
+            android:text="" />
+        <Button
+            style="@style/buttoncalc"
             android:text="X" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
         <Button
             style="@style/buttoncalc"
             android:text="1" />
         <Button
             style="@style/buttoncalc"
             android:text="2" />
+        <Button
+            style="@style/buttoncalc"
+            android:text="3" />
+        <Button
+            style="@style/buttoncalc"
+            android:text="+" />
     </LinearLayout>
 
     <LinearLayout
@@ -50,18 +71,18 @@
         android:orientation="horizontal"
         >
 
-        <Button
-            style="@style/buttoncalc"
-            android:text="AC" />
         <Button
             style="@style/buttoncalc"
             android:text="4" />
         <Button
             style="@style/buttoncalc"
-            android:text="Button" />
+            android:text="5" />
         <Button
             style="@style/buttoncalc"
-            android:text="Button" />
+            android:text="6" />
+        <Button
+            style="@style/buttoncalc"
+            android:text="-" />
     </LinearLayout>
 
     <LinearLayout
@@ -72,56 +93,18 @@
 
         <Button
             style="@style/buttoncalc"
-            android:text="AC" />
-        <Button
-            style="@style/buttoncalc"
-            android:text="Button" />
-        <Button
-            style="@style/buttoncalc"
-            android:text="Button" />
-        <Button
-            style="@style/buttoncalc"
-            android:text="Button" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+            android:text="7" />
 
         <Button
             style="@style/buttoncalc"
-            android:text="AC" />
-        <Button
-            style="@style/buttoncalc"
-            android:text="Button" />
-        <Button
-            style="@style/buttoncalc"
-            android:text="Button" />
-        <Button
-            style="@style/buttoncalc"
-            android:text="Button" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+            android:text="8" />
 
         <Button
             style="@style/buttoncalc"
-            android:text="AC" />
+            android:text="9" />
         <Button
             style="@style/buttoncalc"
-            android:text="Button" />
-        <Button
-            style="@style/buttoncalc"
-            android:text="Button" />
-        <Button
-            style="@style/buttoncalc"
-            android:text="Button" />
+            android:text="*" />
     </LinearLayout>
 
 
