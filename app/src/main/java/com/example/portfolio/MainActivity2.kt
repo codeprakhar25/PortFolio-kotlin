@@ -4,9 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
@@ -15,6 +14,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.portfolio.screens.Login
+import com.example.portfolio.screens.NvTest
 import com.example.portfolio.screens.SignupScreen
 import com.example.portfolio.screens.WeatherScreen
 import com.example.portfolio.ui.theme.PortfolioTheme
@@ -40,13 +40,6 @@ class MainActivity2 : ComponentActivity() {
 
         val weatherViewModel = ViewModelProvider(this)[WeatherViewModel::class.java]
 
-
-
-
-
-
-
-
         setContent {
             PortfolioTheme {
                 // A surface container using the 'background' color from the theme
@@ -54,8 +47,9 @@ class MainActivity2 : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
+                    NvTest()
 //                    Navigation()
-                    WeatherScreen(viewModel = weatherViewModel)
+//                    WeatherScreen(viewModel = weatherViewModel)
                 }
             }
         }
