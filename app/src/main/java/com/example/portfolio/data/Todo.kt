@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
 data class Todo(
 
     @PrimaryKey(autoGenerate = true)
-    var id :String,
+    var id :Int,
     var created_at: String,
     var title:String
 )

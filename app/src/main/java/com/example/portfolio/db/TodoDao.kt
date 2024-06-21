@@ -16,6 +16,6 @@ interface TodoDao{
     @Insert
     fun createTodo(todo : Todo)
 
-    @Delete
-    fun DeleteTodo(id : Int)
+//    @Delete
+//    fun DeleteTodo(id : Int)
 }
