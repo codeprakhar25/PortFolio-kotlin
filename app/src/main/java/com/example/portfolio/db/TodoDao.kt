@@ -8,13 +8,13 @@ import androidx.room.Query
 import com.example.portfolio.data.Todo
 
 @Dao
-interface TodoDao{
+interface TodoDao {
 
     @Query("SELECT * FROM TODO")
-    fun getAllTodo() : LiveData<List<Todo>>
+    fun getAllTodo(): LiveData<List<Todo>>
 
     @Insert
-    fun createTodo(todo : Todo)
+    fun createTodo(todo: Todo)
 
 //    @Delete
 //    fun DeleteTodo(id : Int)

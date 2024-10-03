@@ -48,7 +48,7 @@ fun NvTest() {
 @Composable
 fun Main(modifier: Modifier = Modifier,selectedIndex:Int) {
 when(selectedIndex){
-    0-> Profile()
+    0-> Login()
     1-> WeatherScreen(viewModel = WeatherViewModel())
     2-> Profile()
 }
